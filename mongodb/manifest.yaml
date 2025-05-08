@@ -22,8 +22,8 @@ spec:
         tier: db
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: mongodb
+        image: Jellapraveenkuamar/mongodb:v1
         imagePullPolicy: Always
 ---
 apiVersion: v1
