@@ -6,20 +6,20 @@ metadata:
   labels: # these labels are deployment labels
     app: web
     project: roboshop
-    tier: app
+    tier: web
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: web  # these labels are used to find the pods
       project: roboshop
-      tier: app
+      tier: web
   template:
     metadata:
       labels: # these labels are pod labels
         app: web
         project: roboshop
-        tier: app
+        tier: web
     spec:
       containers:
       - name: web
@@ -39,7 +39,7 @@ spec:
   selector:
     app: web
     project: roboshop
-    tier: app
+    tier: web
   ports:
     - protocol: TCP
       port: 80 #service port
