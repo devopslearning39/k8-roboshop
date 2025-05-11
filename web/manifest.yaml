@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: joindevops/web:v1
+        image: jellapraveenkumar817/web:v1
         imagePullPolicy: Always
         volumeMounts:
         - name: nginx-conf
